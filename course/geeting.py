@@ -5,6 +5,13 @@ age = int(input('Ton age ? '))
 print('Bonjour', first_name, last_name, ', tu as ', age, ' ans !')
 
 if age >= 18 :
-    print("Tu es Majeur")
+    status = input("Tu es Majeur")
 else:
-    print("Tu es Mineur")
+    status = input("Tu es Mineur")
+
+print("Récapitulons :")
+report = [first_name, last_name, str(age) + ' ans', status]
+i = 0
+while i < len(report):
+    print(report[i])
+    i += 1
