@@ -9,9 +9,26 @@ if age >= 18 :
 else:
     status = input("Tu es Mineur")
 
-print("Récapitulons :")
+input("Récapitulons :")
 report = [first_name, last_name, str(age) + ' ans', status]
 i = 0
 while i < len(report):
     print(report[i])
     i += 1
+
+user = {
+   "first_name": "John",
+   "last_name": "Doe",
+   "age": str(20) + ' ans',
+   "email" : "john.doe@yahoo.fr"
+}  
+input('Je me présente:')
+for val in user.values():
+
+    print(val)
+user['age'] = str(3250) + ' ans'
+input('Oups ...')
+input('J\'ai fait une erreur ...')
+for val in user.values():
+
+    print(val)
